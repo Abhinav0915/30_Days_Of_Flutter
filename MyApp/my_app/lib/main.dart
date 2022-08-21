@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_app/home_page.dart';
 
 void main() {
   runApp(const AppName()); //App Name is given in runnApp methode
@@ -9,18 +10,10 @@ class AppName extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
-
-    int days = 30;
+    
 
     return MaterialApp(
-      home: Material(
-        child: Center(
-          child: Container(
-            child: const Text("$days in Flutter"),
-          ),
-        ),
-      ),
+      home: HomePage(),
     );
   }
 }
